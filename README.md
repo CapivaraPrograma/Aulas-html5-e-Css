@@ -1,6 +1,6 @@
-Pasta dedicada a introdução de HTML5 e CSS3
+# Repostitório dedicada a introdução de HTML5 e CSS3
 
-HTML5:
+## Introdução HTML5:
 - Estrutura do HTML
 - Estrutura do HTML e Meta View
 - Atributos de id e class
