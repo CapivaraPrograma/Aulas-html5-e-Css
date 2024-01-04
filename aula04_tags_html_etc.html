@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <p>
+        <b>Negrito</b><br>
+        <strong>texto mais forte, parece com negretio.</strong> <br>
+        <i>deixa o texto em itálico(o leitor de tela identifica como itálico).</i> <br>
+        <em> efatisa o texto, também deixa em itálico(perceba que deixa em itálico apenas visualmente,
+             o leitor não identifica).</em> <br>
+        <del>risca um texto, observe</del> <br>
+        <ins>deixa uma linha embaixo do texto</ins> <br>
+        observe que essas tag são apenas semanticas.
+        Ja as tag s e u são respectivamente:<br>
+        <s>a mesma coisa do del porém é uma tag física</s> <br>
+        <u>a mesma coisa do ins, porém é uma tag física</u> <br>
+        <small>diminue o tamanho de um texto</small> <br>
+        Exemplo de formatação especial 
+        2<sup>2</sup> H<sub>2</sub>O<br>
+        <q cite="https://github.com/CapivaraPrograma">Tag utilizada para fazer citação, nesse exemplo vou colocar o meu git como referencia de citação</q><br>
+
+        Também é possível adicionar imagens e links:
+             <a href="https://github.com/CapivaraPrograma">Exemplo de tag de arquivo.Link do meu github, por padrão sai da página para o clink</a><br>
+             <a href="https://github.com/CapivaraPrograma" target="_blank">É possível colocar um target, o quê muda a dinamica do link,o valor blank abre o link em outra aba</a><br>
+             Adicionando uma imagem e mudando o tamanho padrão com width e heiht <br>
+             <img src="https://avatars.githubusercontent.com/u/153379611?s=400&u=d9054ae2293c3b76c053771918f8b1ae0814e9be&v=4" alt="Aqui colocamos a descrição da imagem para o leitor de tela" width="100" heiht="20"></a> <br>
+             Colocando link em uma imagem<br>
+             <a href="https://github.com/CapivaraPrograma" target="_blank"><img src="https://avatars.githubusercontent.com/u/153379611?s=400&u=d9054ae2293c3b76c053771918f8b1ae0814e9be&v=4"
+                alt="Aqui colocamos a descrição da imagem para o leitor de tela"> <br>    
+    </p>
+    <h1>Veja que não ficou vermelho</h1>
+    <h2>
+        Agora vamos ver Tags que não podem vir dentro da tag p <br>
+        <blockquote cite="https://github.com/CapivaraPrograma">Aqui sim estamos fazendo um bloco de citação</blockquote>
+        <p>podemos ter a tag p dentro de um blockquote </p>
+        Temo uma outra tag de quebra de linha, porem de forma horizontal:
+        <hr>
+        Outra tag muito importante é a tag de código: <br>
+        <code>console.log</code>
+        Para colocar código que tem quebra de linha devemos usar a tag preformadada
+        <pre>
+let a = 10
+let b = 20
+if(a>b) {
+    console.log(a)
+}else{
+    console.log(b)
+}</pre><br>
+Temos também as tag spawn e divi que são conteines genéricos: <br>
+Spawn é um conteiner genérico em line <br>
+<spwan style="color: red">Texto qualquer</spwan>
+Div é um display em bloco <br>
+<div> É outra tag genérica, ela divide o texto, porém é um bloco e não é em line</div>
+    </h2>
+</body>
+</html>
