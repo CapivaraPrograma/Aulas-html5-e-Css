@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/2a4d4267-92bc-411e-a465-f2f082d83264/BR-pt-20240101-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #heading {
+            /* background: #e50914; vamos comentar o background principal para poder colocar uma imagem de fundo*/
+            background: rgba(0, 0, 0, 0.7)
+        }
+
+        #heading div{
+            width: 90%;
+            display: flex;
+            /* background: blue; vamos comentar o background da div para poder colocar uma imagem de fundo */
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1 {
+            padding: 15px  0; 
+            /* ao inves de digitarmos um padding para cada posição podemos digitar apenas um como é o exemplo acima: padding: 15px 0 0 50px;
+            abaixo o exemplo de varios padding
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            */
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #heading a {
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif
+        }
+
+    </style>
+</head>
+<!--    Demontranco como funciona os estilos, basicamente são como camadas, um encima do outro e por ai vai
+    <body>
+        <div style="width: 180px; height: 120px; background: red;">
+
+            
+        <div style="width: 60px; height: 60px; background: yellow; float: left;"></div>
+        <div style="width: 60px; height: 60px; background: rgb(2, 51, 114);float: left;"></div>
+        <div style="width: 60px; height: 60px; background: green;float: left;"></div>
+        <div style="width: 120px; height: 60px; background: orange;float: left; text-align: center;">
+            <p style="width: 20px; height: 20px; background: grey;"></p>
+        </div>
+        <div style="width: 60px; height: 60px; background: purple;float: left;"></div>
+
+        </div> 
+    </body>-->
+
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <a href="#">Netflix</a>
+            </h2>
+         </div>
+    </header>
+</body>
+
+</html>
