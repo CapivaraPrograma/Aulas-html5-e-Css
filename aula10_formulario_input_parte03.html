@@ -46,7 +46,7 @@
         <p>
             <!--Esse .acept define quais extensoes podem ser aceitas(lembrando que isso por si só não é uma garantia) se tirar ele aceita tudo-->
             <label for="file">Sua foto</label>
-            <input type="file" id="file" name="file" .acept="png,.svg,image/*">
+            <input type="file" id="file" name="file" accept=".png, .svg, image/*">
         </p>
 
         <p>
@@ -58,6 +58,43 @@
             <button type="reset">Reset</button>
             <button type="submit">Enviar</button>
         </p>
+
+        <p>
+            <label for="password">Digite sua senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="range">range</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2">
+        </p>
+
+        <p>
+            <label for="url">Digite a url</label>
+            <input type="url" id="url" name="url" placeholder="Digite a url">
+        </p>
+
+        <p>
+            <label for="search">search</label>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+
+        <p>
+            <label for="select">Selecione alguma opção: </label>
+            <select id="select" name="select">
+                <optgroup label="teste">
+                <option value="o real valor" label="Valor que a pessoa ve na tela">
+                <option value="o real valor" label="Opção 2">
+                <option value="o real valor" label="Opção 3">
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea: </label>
+            <textarea id="textarea" name="textarea" rows="8" cols="9">teste</textarea>
+        </p>
+
     </form>
 </body>
 </html>
