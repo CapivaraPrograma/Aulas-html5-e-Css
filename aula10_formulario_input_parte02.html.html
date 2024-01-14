@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <style>
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- from é a tag para criação de um formulário-->
+    <!--action define para onde o formulário vai ser mandado-->
+    <!--get é o método padrão-->
+    <!-- target _blank serve para abrir uma nova página apos enviar o formulário, vou desativar por enquanto-->
+    <!-- autocomplete off serve para nao deixar o navegador mostrar as informações apresentadas-->
+    <form action="#" method="get" autocomplete="off">
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </p>
+
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev" name="dev"><br>
+            <label for="dev2">Sou um dev</label>
+            <input type="checkbox" id="dev2" name="dev2"><br>
+            <label for="dev3">Sou um dev</label>
+            <input type="checkbox" id="dev3" name="dev3"><br>
+        </p>
+
+
+        <p>
+            Genero:<br>
+            <label for="feminino">feminino</label>
+            <input type="radio" id="feminino" name="genero"><br>
+            <label for="masculino">masculino</label>
+            <input type="radio" id="masculino" name="genero"><br>
+            <label for="outo">Outro Genero</label>
+            <input type="radio" id="outro" name="genero"><br>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
