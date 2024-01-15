@@ -1,0 +1,6 @@
+/* Perceba que o yello vai sobreescrver em cima do red, pelo fato do css aplicar o último estivo visto*/
+.caixa {
+    background: yello;
+    height: 120px;
+    width: 120px;
+}
