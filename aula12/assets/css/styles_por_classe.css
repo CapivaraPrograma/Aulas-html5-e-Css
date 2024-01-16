@@ -1,0 +1,15 @@
+/* Seleção por classe */
+.color-red{
+    color: red;
+}
+
+/* Seleção por classe é herança, detalhe que é possível mistura a seleção utilizando classe e tag */
+.main-content .heading {
+    font-style: italic;
+    color: blue;
+}
+
+body.error div.main-content h2.heading {
+    font-style: italic;
+    color: purple;
+}

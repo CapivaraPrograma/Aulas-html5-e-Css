@@ -1,0 +1,22 @@
+/* Quando colocamos o "*" estamos selecionando todos os documentos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selecionando por tag (nesse exemplo selecionamos todas tag p) */
+h1,p{
+    color: purple;
+}
+/* Seleção de descendentes ( nesse exemplo estamos modifiando apenas o paragrafos que estão dentro da div*/
+/*Perceba que é possível selecionar mais de um item para isso separamos os item por "," */
+body div section p,
+body div section h2{
+    color: red;
+}
+/*
+Uma outra forma mais simples de fazer essa seleção de cima poria ser:
+h2,p {
+    color: blue;
+}
+*/

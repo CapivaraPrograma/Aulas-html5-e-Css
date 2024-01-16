@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleçao do css por classe</title>
+    <link rel="stylesheet" href="assets/css/styles_por_classe.css">
+</head>
+<!-- Também é possivel adicionar class ao body, porém é normalmente utilizada para indicar erro (definir como itens se comportarão caso aconteça algum erro)-->
+<body class="error">
+    <!--Primeiro exemplo básico de como utilizar class para selecionar o css-->
+    <h1 class="color-red">Lorem ipsum</h1>
+    <h1>lorem ipsum</h1>
+    <p class="color-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, officiis labore voluptas ullam a, optio est accusamus nobis, minus iste harum. Rerum velit temporibus quaerat quam voluptatem voluptas, tempore officia.</p>
+    
+    <!--Exemplo mais complexo nele misturamos conceitos de class e herança(filhos) e também misturamos seleçao de tag e class juntas-->
+    <div class="main-content">
+        <h1 class="heading">teste</h1>
+        <h2 class="heading">teste</h2>
+        <h3 class="heading">teste</h3>
+    </div>
+
+    <!--Essa div ficou para demonstra que os styles aplicados ficaram apenas nas nos itens selecionados-->
+    <div>
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel distinctio totam? Cum architecto eum repellendus molestiae animi tempora, quos minus, esse dicta consequuntur deserunt voluptatibus repudiandae harum! Quidem, voluptate?
+        </p>
+    </div>
+</body>
+</html>

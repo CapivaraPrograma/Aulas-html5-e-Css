@@ -1,0 +1,34 @@
+/*Perceba que nesse exemplo tanto a div pai quanto a div filho ficaram vermelhas
+Isso ocorre pq por padrão as divs vem com a propriedade color: inherit;(herdado),
+Para mudar isso podemos colocar usar color: initial;(inicial) assim a filho para de herda a cor do pai
+*/
+.pai{
+    color: red;
+}
+
+/*Vamos retirar a herança de cor das divs, dessa forma apenas a div pai vai ficar vermelha*/
+div{
+    color: initial;
+    margin-left: 20px;
+}
+/*Perceba que a seleção de dependente é feita por meio de espaço*/
+.pai .filho {
+    color: blue;
+}
+
+
+/*Seletor de filhos diretos, nesse caso tanto faz utilizar ou não espaços entre as classes */
+.pai>.filho {
+    color: green
+}
+
+/*Perceba que nesse exemplo a filha do filho 1 nao mudou de cor, isso ocorre pelo fato de estar dentro de outra tag, no caso span.
+Ou seja, ela já não é mais filha direta da classe filho 1 (ela virou filha do span).
+.pai > .filho > .filha-outro-pai {
+    color: brown
+}
+
+/* se colocarmos .pai.filho estamos dizendo que o elemento deve ter tanto a classe pai quanto a classe filho, ou seja nesse caso também faz diferença não utiliza espaço*/
+.pai.filho {
+    color: purple;
+}
