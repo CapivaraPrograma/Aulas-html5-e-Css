@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Vamos usar a seleção adjacente "+". Dessa forma vamos selecionar todo <p> que estiver depois de um h1*/
+.pai h1+p{
+    color: red;
+}
+
+/*Agora vamos pegar todo h1 que está logo depois de um p, ou seja o inverso da outra*/
+.pai p + h1{
+    color: yellow
+}
+
+/* Se quisermos selecionar todos os elementos que vem depois de um podemos utilizar o general sibling selector "~"*/
+/*Nesse exemplo selecionamos todos os parágrafos que vem depois de um h2*/
+/*Lembrando que quando utilizamos "~" o espaço importa*/
+
+.pai h2~p{
+    color: blue;
+}
+
+.pai .um~.dois {
+    color:purple;
+}
+
+
+.pai .um + .dois {
+    color:green;
+}

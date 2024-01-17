@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Exemplo de como utilizar os próprios atribuitos criados, nessse caso meu-atributo*/
+[meu-atributo] {
+    color: red;
+}
+/*Também é possível adicionar um valor ao atributo*/
+[atributo-valor="blue"] {
+    color: blue;
+}
+
+/*Por enquanto isso só aumentou o tamanho do botão, futuramente vai servir para outras coisas */
+[checked] {
+    width: 50px;
+    height: 50px;
+}
