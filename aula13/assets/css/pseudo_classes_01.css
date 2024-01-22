@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Adiciona uma animação de transição*/
+.heading {
+    transition: all 300ms ease-in-out
+}
+
+/*hover aplica um efeito quando o mouse passa por cima desse estilo*/
+/*Nesse exemplo mudamos o fundo para vermelho e a cor da letra de branco para petro quando o mouse fica em cima*/
+/*text-decoration no nome serve para tirar aquela linha que fica em baixo do link*/
+.heading:hover {
+    background: rgb(192, 61, 61);
+    color: white;
+    text-decoration: none;
+}
+
+/* Muda a cor de todos os links*/
+/*Lembrando que bakcground deixa o fundo de algo com a cor. Ja colocar deixa, por exemplo a cor de um letra diferente*/
+a {
+    color:darkorange;
+}
+
+/*Muda a cor dos link que ainda não foram visitado*/
+/*Perceba que esse link não tem aquela linha sublinhada em baixo, tiramos com o valor none em text-decoration*/
+a:link {
+    color:deeppink;
+    text-decoration: none;
+}
+
+/*Mudar a cor dos link que foram visitados*/
+a:visited{
+    color:darkgreen
+}
+
+/*Indica que um link foi cliado e está sendo arrastado*/
+a:active{
+    background: darkslategray;
+    color:white;
+    text-decoration: none;
+}
+
+/*Aplica um efeito quando o input foi selecionado*/
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/*Indica que um input é requerido, nesse exemplo mudamos a cor para chocolate de um input requerido*/
+input:required{
+    background: chocolate;
+}
+
+/*Aplica um efeito quando o input não está selecionado, nesse caso deixa a cor dele vermelha*/
+/*no cursor modificamos para deixar o curso não permitido*/
+input:disabled {
+    background-color: red;
+    cursor:not-allowed;
+}
+
+/*Perceba que aqui usamos um elemeno para mudar o estilo de outro*/
+/*Se o input checked estiver marcado o o valor, um paragrafo vem depois de um checked muda de cor*/
+input:checked + p {
+    background: crimson;
+    width: 50px;
+    height: 50px;
+}
+
+/* Exemplo de seleção de estilo em uma lista*/
+.pai .lista li {
+    background: crimson;
+}
+
+.pai .lista li:first-child{
+    background: cadetblue;
+}
+
+.pai .lista li:last-child {
+    background: darkgoldenrod;
+}
