@@ -1,0 +1,42 @@
+/*Muda a cor de todos os parágrafos*/
+p {
+    color: green;
+}
+
+/*Utilizando a negação*/
+/*Nesse exemplo: todos os parágrafos menos o que tem a classe meio*/
+p:not(.meio) {
+    color: red;
+}
+
+/*Se o input estiver marcado fica dessa cor*/
+input:checked + .condicao {
+    background: darkorange;
+    color: crimson;
+}
+
+/*Se o input não estiver marcado fica com essa outra cor*/
+input:not(check) + .condicao{
+    background: yellow;
+    color:blue;
+}
+
+/*Nesse exemplo estamos utilizando o nth-child para selecionar a penas o indice 2 de valores irmãos*/
+ul li:nth-child(2) {
+    background-color: rebeccapurple;
+}
+
+/* "even" seleciona todos os pares e "odd" seleciona todos os impares*/
+ul li:nth-child(odd) {
+    background-color: brown;
+}
+
+/*Seleciona todos os itens de x em x. Nesse exemplo é de 3 em 3*/
+ul li:nth-child(3n) {
+    background-color: darkgreen;
+}
+
+/*Começando do 5 elemento pulando de 3 em 3*/
+ul li:nth-child(3n +5) {
+    background-color: violet;
+}
