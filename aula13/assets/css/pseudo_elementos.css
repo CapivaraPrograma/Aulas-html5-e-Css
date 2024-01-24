@@ -1,0 +1,39 @@
+/*Por mais que pseudo elementos funcione com apenas 1 : o certo pela documentação é utilizar ::*/
+
+ul li::after {
+    content: " - ";
+    background: gold;
+    display: block;
+}
+
+ul li::before {
+    content: "*";
+    background: red;
+}
+
+p {
+    font-size: 24px;
+}
+
+P::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+p::first-line {
+    background-color: red;
+}
+
+p::selection {
+    background: black;
+    color: white
+}
+
+::placeholder {
+    color: red;
+}
+
+.nomeai::placeholder {
+    color: blue;
+}
