@@ -1,0 +1,24 @@
+/* Niveis de Especificidades
+ID > CLASSE > Atributos e Pseudo-classes > Elementos e Pseudo-elementos
+*/
+/*Perceba que o número de especificidade é 100*/
+#p {
+    background-color: red;
+}
+/*Perceba que a cor não ficou amarela, isso ocorre pelo fato de a especificidade do id é maior que a da classe*/
+/*O número da especificidade é 010 ( menor que o anterior)
+.paragrafo {
+    background-color: yellow;
+}
+
+/*Para conseguir mudar a cor podemos selecionar o ID mais a classe*/
+/*Perceba que quando colocamos o mouse sobre o seletor aparece o número da especificidade ( 110)*/
+#p.paragrafo {
+    background: green;
+}
+
+/*Elemento,ID e classe*/
+/*O número de pioridade é 111*/
+p#p.p {
+    background: blue;
+}
