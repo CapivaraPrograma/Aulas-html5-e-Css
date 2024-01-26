@@ -14,7 +14,7 @@ ID > CLASSE > Atributos e Pseudo-classes > Elementos e Pseudo-elementos
 /*Para conseguir mudar a cor podemos selecionar o ID mais a classe*/
 /*Perceba que quando colocamos o mouse sobre o seletor aparece o número da especificidade ( 110)*/
 #p.paragrafo {
-    background: green;
+    background: rgb(104, 110, 104);
 }
 
 /*Elemento,ID e classe*/
