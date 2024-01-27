@@ -1,0 +1,14 @@
+/* Perceba que tanto o paragrafo quanto o h1 que vem dentro da div estão herdando os atributos*/
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 70px;
+
+}
+
+/* Cao não queira que as outras tag herdem a herança podemos utilizar initial (desativa a herança) e inherit(ativa, vem por padrão ativado)*/
+/* Nesse caso o parágrafo está herdando apenas o font-family*/
+p {
+    font-size: initial; 
+    color: initial
+}
