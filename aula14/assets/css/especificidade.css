@@ -1,5 +1,15 @@
 /* Niveis de Especificidades
-ID > CLASSE > Atributos e Pseudo-classes > Elementos e Pseudo-elementos
+ID > CLASSE > (Atributos, pseudo-classes, elementos e pseudo-elementos)
+
+Temos também algumas regras que não são muito usuais porem é bom saber:
+o Atributo style na tag tem maior prioridade que ID
+!import é a maior prioridade e só pode ser sobreposto por outro !important
+
+Ou do menor para o maior as regras são aplicadas assim: ( Vale lembrar que é sempre recomendado tentar resolver por niveis de especificidades
+Especificidade
+empate
+style
+!important **
 */
 /*Perceba que o número de especificidade é 100*/
 #p {
@@ -19,6 +29,13 @@ ID > CLASSE > Atributos e Pseudo-classes > Elementos e Pseudo-elementos
 
 /*Elemento,ID e classe*/
 /*O número de pioridade é 111*/
-p#p.p {
+p#p.paragrafo {
     background: blue;
 }
+/* Aqui nesse exemplo temos 2 ID e 2 classe*/
+/*O número de prioridade e 222*/
+body#b.bclass p#p.paragrafo {
+    background: purple;
+}
+
+/* A o atributo style tem maior prioridade, por isso está red( porém não é muito usual*/
